@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   gap: 5em;
+  margin-bottom: 100px;
 }
 .grid-section .top-grid-section .grid-logo img {
   height: 530px;
@@ -30,6 +31,97 @@
   color: rgba(204, 204, 204, 0.7725490196);
   margin-top: 30px;
   line-height: 1.5;
+}
+.grid-section .down-grid-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-section .down-grid-section .down-grid-section-flexbox {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.grid-section .down-grid-section .card-box {
+  height: auto;
+  width: 290px;
+  text-align: center;
+}
+.grid-section .down-grid-section .card-box .icon-view {
+  height: 70px;
+  width: 70px;
+  border-radius: 10px;
+  margin: auto;
+  background: #1f2937;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px rgba(204, 204, 204, 0.493);
+  margin-bottom: 30px;
+}
+.grid-section .down-grid-section .card-box .icon-view span {
+  font-size: 40px;
+  color: rgba(0, 0, 255, 0.568);
+  cursor: pointer;
+}
+.grid-section .down-grid-section .card-box h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.grid-section .down-grid-section .card-box h3:hover {
+  color: rgba(0, 0, 255, 0.623);
+  cursor: pointer;
+}
+.grid-section .down-grid-section .card-box p {
+  color: rgba(255, 255, 255, 0.349);
+  text-align: center;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.grid-section .down-grid-section .card-box .btn-view {
+  width: 140px;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  color: rgba(0, 0, 255, 0.473);
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.grid-section .down-grid-section .card-box .btn-view::after {
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+  background: blue;
+  transition: all 0.4s ease-in-out;
+  width: 0%;
+  height: 8%;
+}
+.grid-section .down-grid-section .card-box .btn-view:hover::after {
+  width: 100%;
+  height: 8%;
+  transition: all 0.4s ease-in-out;
+  border-radius: 5px;
+}
+.grid-section .down-grid-section .card-box .btn-view p {
+  color: rgba(0, 0, 255, 0.473);
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 600;
+}
+.grid-section .down-grid-section .card-box .btn-view span {
+  margin-top: 10px;
 }
 
 .top-section {
