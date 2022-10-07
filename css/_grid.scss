@@ -125,12 +125,12 @@
                 background: blue;
                 transition: all 0.4s ease-in-out;
                 width: 0%;
-                height: 8%;
+                height: 7%;
             }
         
             &:hover::after {
                 width: 100%;
-                height: 8%;
+                height: 7%;
                 transition: all 0.4s ease-in-out;
                 border-radius: 5px;
             }
