@@ -1,0 +1,15 @@
+.top-section {
+  background: url(../image/bg01.jpg);
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}/*# sourceMappingURL=about.css.map */

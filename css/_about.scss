@@ -1,0 +1,172 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+$primary-color:#fff;
+$secondry-color:#ccc;
+$btn-color:rgba(0, 0, 255, 0.5);
+
+
+
+.top-section {
+    background: url(../image/bg01.jpg);
+    height: 660px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .navbar{
+    height: 70px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu-left{
+    img{
+        cursor: pointer;
+    }
+}
+
+
+.menu-right{
+   @include flex();
+text-decoration: none;
+
+a{
+text-decoration: none;
+color: rgba(204, 204, 204, 0.863);
+text-transform: capitalize;
+font-size: 17px;
+font-weight: 700;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+&:hover{
+    color: #fff;
+}
+ &:hover > i {
+     transform: rotate(180deg);
+ }
+}
+
+a i{
+    font-size: 13px;
+transition: all 0.3s ease-in-out;
+   
+}
+
+}
+
+.menu-last {
+    @include flex();
+    span > i{
+       height: 40px;
+       width: 40px;
+       border-radius: 50%;
+       background: #fff;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: #232323;
+       cursor: pointer;
+       &:hover{
+        background: #ccc;
+       }
+    }
+      #move{
+        animation: spin 3s infinite;
+        @keyframes spin{
+            to{
+                transform: rotate(1turn);
+            }
+        }
+      }
+
+}
+
+.background-menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    color: #fff;
+    
+   .content-text h1{
+font-size: 55px;
+font-weight: 700;
+    }
+
+    .content-text h2{
+        font-size: 50px;
+   font-weight: 700;
+  text-align: center;
+    }
+
+   .content-text p{
+    color: $secondry-color;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 2;
+   }
+
+   .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: 50px;
+    width: 180px;
+    margin: auto;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: 600;
+    background: $btn-color;
+    color: $primary-color;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  &::after{
+    content: '';
+    left: 0;
+    // top: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background: rgba(255, 0, 0, 0.377);
+    transition: all 0.4s ease-in-out;
+    width: 0%;
+    border-width: 1px;
+    border-radius: 5px;
+  }
+        &:hover::after {
+            transition: all 0.4s ease-in-out;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #ccc;
+            color: #fff;
+        }
+
+   }
+
+}
+
+
+}
+
+
+
+
+
+
+
