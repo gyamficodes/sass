@@ -2,13 +2,14 @@
 .menuboard-section {
   height: auto;
   padding-top: 50px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   background: #00001e;
 }
 .menuboard-section .menuboard-section-top .menuboard-content {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 2em;
 }
 .menuboard-section .menuboard-section-top .menuboard-content a {
   text-decoration: none;
@@ -30,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 .menuboard-section .menuboard-section-down .menubord-flexbox {
   display: flex;
@@ -48,7 +49,7 @@
 .menuboard-section .menuboard-section-down .menubord-flexbox .menuboard-card img {
   height: 140px;
   border-radius: 50%;
-  transition: all 8s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 .menuboard-section .menuboard-section-down .menubord-flexbox .menuboard-card:hover img {
   transform: rotate(300deg);
