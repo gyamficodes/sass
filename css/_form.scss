@@ -1,0 +1,126 @@
+@mixin form-flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-section {
+  background: url(../image/cta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-attachment: fixed;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 1;
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: o;
+    background: rgb(22 28 45 / 0.5) !important;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+  }
+
+  .form-section-menu {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    .form-box {
+      width: 450px;
+      height: 574px;
+      background: #0f172a !important;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      #box {
+        margin-top: 30px;
+        font-size: 13px;
+        border-radius: 5px;
+        height: 20px;
+        width: 80px;
+        text-align: center;
+        background: #121a34;
+        color: blue;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h2 {
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-weight: 600;
+      }
+
+      p {
+        color: rgba(255, 255, 255, 0.452);
+        font-weight: 600;
+        line-height: 1.5;
+      }
+
+      span {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-top: 20px;
+      }
+
+      .input-flexbox {
+        @include form-flexbox();
+       
+        #input {
+          display: flex;
+          flex-direction: column;
+          gap: 0.6em;
+
+          input {
+            width: 190px;
+            height: 35px;
+            background: #121a34;
+            padding-left: 10px;
+            padding-right: 10px;
+            outline: none;
+            color: rgb(226 232 240);
+            border: 1px solid rgba(204, 204, 204, 0.548);
+            border-radius: 0.25rem;
+            &:focus {
+              border-color: #4f46e5;
+              color: aqua;
+            }
+          }
+        }
+      }
+    }
+    .btn-app{
+        width: 100%px;
+        height: 40px;
+        margin: auto;
+        background: #0000b2;
+        margin-top: 30px;
+        border-radius: 10px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: #fff;
+
+            &:hover{
+              background: #0000b279;
+            }
+    }
+
+  }
+}
