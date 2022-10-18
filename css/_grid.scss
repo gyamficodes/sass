@@ -1,159 +1,144 @@
-@mixin  flex-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5em;
+@mixin flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
 }
 
+.grid-section {
+  height: auto;
+  background: #00001e;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
-.grid-section{
-    height: auto;
-    background: #00001e;
-    padding-top: 100px;
-    padding-bottom: 100px;
-
-
-.top-grid-section{
+  .top-grid-section {
     @include flex-box();
     margin-bottom: 100px;
 
-    .grid-logo img{
-        height: 530px;
+    .grid-logo img {
+      height: 530px;
     }
 
- .grid-content{
-       p{
+    .grid-content {
+      p {
         color: #ccccccc5;
         font-size: 16px;
         font-weight: 700;
         line-height: 1.5;
         margin-bottom: 20px;
       }
-   h3{
-    color: #fff;
-    font-size: 30px;
-    line-height: 1.8;
-   }
+      h3 {
+        color: #fff;
+        font-size: 30px;
+        line-height: 1.8;
+      }
 
-   #page-content{
-    color: #ccccccc5;
-    margin-top: 30px;
+      #page-content {
+        color: #ccccccc5;
+        margin-top: 30px;
         line-height: 1.5;
-   }
+      }
+    }
+  }
 
- }
- 
-
-}
-
-
-.down-grid-section{
+  .down-grid-section {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    .down-grid-section-flexbox{
-        display: flex;
-        align-items: center;
-        gap: 2em;
+    .down-grid-section-flexbox {
+      display: flex;
+      align-items: center;
+      gap: 2em;
     }
 
-    .card-box{
-        height: auto;
-        width: 290px;
-        // background: #fff;
-        text-align: center;
-               
-        .icon-view{
-            height: 70px;
-            width: 70px;
-            border-radius: 10px;
-            margin: auto;
-            background: #1f2937;
-            margin-top: 30px;
-            display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 1px 1px 1px  rgba(204, 204, 204, 0.493);
-                margin-bottom: 30px;
-                span{
-                    font-size: 40px;
-                    color: rgba(0, 0, 255, 0.568);
-                    cursor: pointer;
-                }
+    .card-box {
+      height: auto;
+      width: 290px;
+      // background: #fff;
+      text-align: center;
+
+      .icon-view {
+        height: 70px;
+        width: 70px;
+        border-radius: 10px;
+        margin: auto;
+        background: #1f2937;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 1px rgba(204, 204, 204, 0.493);
+        margin-bottom: 30px;
+        span {
+          font-size: 40px;
+          color: rgba(0, 0, 255, 0.568);
+          cursor: pointer;
         }
-       h3{
+      }
+      h3 {
         color: #fff;
         font-size: 20px;
         font-weight: 600;
         text-align: center;
-        &:hover{
-            color: rgba(0, 0, 255, 0.623);
-            cursor: pointer;
+        &:hover {
+          color: rgba(0, 0, 255, 0.623);
+          cursor: pointer;
         }
-       }
-        p{
-            color: rgba(255, 255, 255, 0.349);
-            text-align: center;
-            font-weight: 600;
-            margin-top: 10px;
-            font-size: 15px;
-            line-height: 1.5em;
-        }
-       
-        .btn-view{
-            width: 140px;
-            height: 50px;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1em;
-            color: rgba(0, 0, 255, 0.473);
-            position: relative;
-            z-index: 1;
-            cursor: pointer;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.349);
+        text-align: center;
+        font-weight: 600;
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.5em;
+      }
+
+      .btn-view {
+        width: 140px;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        color: rgba(0, 0, 255, 0.473);
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
 
         &::after {
-                content: '';
-                // top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                position: absolute;
-                z-index: -1;
-                background: blue;
-                transition: all 0.4s ease-in-out;
-                width: 0%;
-                height: 7%;
-            }
-        
-            &:hover::after {
-                width: 100%;
-                height: 7%;
-                transition: all 0.4s ease-in-out;
-                border-radius: 5px;
-            }
-
-
-          p{
-        color: rgba(0, 0, 255, 0.473);
-        text-transform: capitalize;
-        font-size: 17px;
-        font-weight: 600;
-          }
-          span{
-            margin-top: 10px;
-          }
+          content: "";
+          // top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+          z-index: -1;
+          background: blue;
+          transition: all 0.4s ease-in-out;
+          width: 0%;
+          height: 7%;
         }
+
+        &:hover::after {
+          width: 100%;
+          height: 7%;
+          transition: all 0.4s ease-in-out;
+          border-radius: 5px;
+        }
+
+        p {
+          color: rgba(0, 0, 255, 0.473);
+          text-transform: capitalize;
+          font-size: 17px;
+          font-weight: 600;
+        }
+        span {
+          margin-top: 10px;
+        }
+      }
     }
-
-}
-
-
-
-
-
-
-
+  }
 }

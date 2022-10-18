@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap");
+.client-background {
+  background: #00001e;
+  height: 600px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.client-background .client-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client-background .client-top .client-top-content h1 {
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+.client-background .client-top .client-top-content p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.445);
+  margin-top: 20px;
+}
+
 .form-section {
   background: url(../image/cta.jpg);
   background-repeat: no-repeat;
